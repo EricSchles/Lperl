@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+use strict;
+use 5.010;
+use utf8;
+
+say "Now we are going to learn about string repeition";
+say "fred" x 3;
+say "barney" x (4 + 1);
+say 5 x 4.8;
+

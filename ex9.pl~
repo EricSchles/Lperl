@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+use 5.010;
+use diagnostics;
+
+#grab input from the user
+
+while ($correct ne "y"){
+    say "Tell me the radius of the circle";
+    say "I will then compute its circumference";
+    say "radius:";
+    chomp($radius = <STDIN>);
+
+    say "Thanks!  Just to make sure, the radius is $radius";
+    say "right?(y or n)";
+    chomp($correct = <STDIN>);
+}

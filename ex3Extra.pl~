@@ -1,0 +1,26 @@
+#!/usr/bin/perl
+
+use strict;
+use 5.010;
+
+@command1 = `ls`;
+@command2 = `whereis ex3.pl`;
+@command3 = `locate ex3.pl`;
+@command4 = `man perl`;
+
+say "We can do a lot with Perl";
+say "One of the coolest things, is we can use the machine";
+say "That's why Perl is a powerful language";
+say "Because we can leverage the OS";
+say "Let's look at all the files in the current folder";
+exec @command1;
+
+say "Now let's locate ex3.pl (the one we just wrote)";
+exec @command2; #whereis
+say "(with whereis)";
+exec @command3;
+say "(with locate)";
+
+say "Now look at the documentation on Perl";
+exec @command4;
+

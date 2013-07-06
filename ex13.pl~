@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+use strict;
+use 5.010;
+
+my @fred;
+
+$fred[0] = "yabba";
+$fred[1] = "dabba";
+$fred[2] = "doo";
+
+foreach (@fred) {
+    print;
+    print " ";
+}

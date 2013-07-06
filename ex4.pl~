@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+#playing with numbers
+use 5.010;
+use strict;
+
+my @first = (1.25,255.000,255.0,7.25e45,-6.5e24,-12e-24,1.2E-23);
+
+foreach (@first) {
+    print;
+}
+say "This should give a list of numeric literals, if it didn't...";
+say "Well then you did something wrong.";
+
+
